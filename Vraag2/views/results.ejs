@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My app</title>
+  </head>
+  <body>
+
+    <ul class="search_results">
+      <% for (var i = 0; i < search_results.length; i++) {%>
+        <li class="search_result">
+            <span><%= search_results[i].id %></span>
+            <span><%= search_results[i].datum_vaststelling_jaar %></span>
+            <span><%= search_results[i].datum_vaststelling_maand %></span>
+            <span><%= search_results[i].datum_vaststelling %></span>
+            <span><%= search_results[i].opnameplaats_straat %></span>
+            <span><%= search_results[i].opnameplaats_rijrichting_gaand %></span>
+            <span><%= search_results[i].opnameplaats_zone_snelheid %></span>
+            <span><%= search_results[i].aantal_passanten %></span>
+            <span><%= search_results[i].aantal_overtredingen_snelheid %></span>
+            <span><%= search_results[i].aantal_overtredingen_roodlicht %></span>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
