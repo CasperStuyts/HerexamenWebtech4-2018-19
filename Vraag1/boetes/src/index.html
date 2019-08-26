@@ -7,7 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
-</body>
+
+  <body>
+    <form action="/search" method="post">
+    Adres van overtreding: <input type="text" name="Adress" value=""><br>
+
+    <input type="submit" value="Submit">
+    </form>
+    <form action="/search" method="post">
+    Aantal overtredingen op snelheid: <input type="text" name="AmountOfOvertredingen" value=""><br>
+
+    <input type="submit" value="Submit">
+    </form>
+
+  </body>
+
 </html>
